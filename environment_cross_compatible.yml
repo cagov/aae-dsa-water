@@ -1,0 +1,8 @@
+name: water
+channels:
+  - defaults
+dependencies:
+  - jupyterlab
+  - scikit-learn
+  - seaborn
+  - cartopy

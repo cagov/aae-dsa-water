@@ -5,4 +5,5 @@ The [Division of Drinking Water](https://www.waterboards.ca.gov/drinking_water/p
 
 ## Contents
 * `water.ipynb`: A Jupyter notebook with code to generate the machine learning model.
-* `environment.yml`: To use `water.ipynb` notebooks together with all the requisite Python packages, create a new conda environment called `water` using the provided environment file by running this command: `conda env create -f environment.yml`.
+* `environment.yml`: To use `water.ipynb` notebooks together with all the requisite Python packages, create a new conda environment called `water` that uses this environment file by running this command: `conda env create -f environment.yml`. This environment file will install OSX-specific packages, and will reproduce the original environment exactly.
+* `environment_cross_compatible.yml`: To create an enviroment file on a Linux or Windows machine, use this cross-compatible file. This will not reproduce the environment exactly.
