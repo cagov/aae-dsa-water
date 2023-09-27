@@ -11,10 +11,13 @@ This repository includes data, code, environment files, and a file containing al
 * **Forecast** - The file `Forecast_2023.csv` includes all the CWS forecasted to experience some form of drought impact.
 
 ## Running the Model
-The following steps describe exactly how to use the data, code, and envrionment file together to build and run the model. This will generate a .csv file of drought-impacted CWSs ranked by probability (see the column  `Expected`).
+The following steps describe exactly how to use the data, code, and envrionment file together to build and run the model using [Jupyter Lab](https://jupyter.org/install). This will generate a .csv file of drought-impacted CWSs ranked by probability (see the column  `Expected`).
 
 1. First, install conda. Conda is a tool that creates environments, or a collection of version-specific and OS-specific Python packages. This allows enables reproducibility. Using a different verson of a Python package than the original developer might produce differing results. It is best practice to use the same environment as the developer. Follow [these installation instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) to install conda. Installing miniconda is sufficient for this purpose.
-2. Create the environment using the command `conda env create -f environment.yml`. This environment file will install OSX-specific packages, and will reproduce the original environment exactly. To create an enviroment file on a Linux or Windows machine, use the file called `environment_cross_compatible.yml`.
-3. Open Jupyter Lab by typing `jupyter-lab` in the terminal.
-4. Navigate to the list of files and open `water.ipynb`.
-5. Under the tab Run, select 'Run all cells'. This will produce a .csv file called `Forecast_2023.csv`.
+2. Clone this Github repository using the command `git clone https://github.com/cagov/aae-dsa-water.git`.
+3. For macOS, create the environment using the command `conda env create -f environment.yml`. This environment file will install OSX-specific packages, and will reproduce the original environment exactly. To create an enviroment file on a Linux or Windows machine, use the file called `environment_cross_compatible.yml`.
+4. Open Jupyter Lab by typing `jupyter-lab` in the terminal.
+5. Navigate to the list of files and open `water.ipynb`.
+6. Under the tab Run, select 'Run all cells'. This will produce a .csv file called `Forecast_2023.csv`.
+
+Note: It is also possible to bypass Steps 3-6 and, instead, run the `water.ipynb` file directly within [Visual Studio Code](https://code.visualstudio.com/).
