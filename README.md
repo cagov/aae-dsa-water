@@ -1,7 +1,10 @@
 # aae-dsa-water
 ## Advanced Analytics and Evaluation Data Science Accelerator - Water Project
 
-The [Division of Drinking Water](https://www.waterboards.ca.gov/drinking_water/programs/) (DDW) at the [California State Water Resources Control Board](https://www.waterboards.ca.gov/) regulates 2866 Community Water Systems (CWS) throughout the state. Some of these CWS risk running out of water during the dry summer season. To address this problem, we created a machine learning model that forecasts which CWS face the highest risk of running out of water. The model is intended to run in production on a monthly basis, producing forecasts for at-risk CWS within the subsequent ninety days. 
+The [Division of Drinking Water](https://www.waterboards.ca.gov/drinking_water/programs/) (DDW) at the [California State Water Resources Control Board](https://www.waterboards.ca.gov/) regulates 2866 Community Water Systems (CWS) throughout the state. Some of these CWS risk running out of water during the dry summer season. To address this problem, the [Data Science Accelerator](https://docs.data.ca.gov/odi-data-services-dif/data-science-accelerator) at the [Office of Data and Innovation](https://innovation.ca.gov/) collaborated with the Division of Drinking Water to create a machine learning model that forecasts which CWS face the highest risk of running out of water. The model is intended to run in production on a monthly basis, producing forecasts for at-risk CWS within the subsequent ninety days.
+
+## Development Status
+Release [v0.1.0](https://github.com/cagov/aae-dsa-water/releases/v0.1.0) contains the results of the collaboration between DDW and ODI. For more up-to-date development on this project, see the [Division of Drinking Water Github repository](https://github.com/CAWaterBoardDataCenter/ODA-Drought-RA-2023).
 
 ## Contents
 This repository includes data, code, environment files, and a file containing all the forecasts.
@@ -11,6 +14,13 @@ This repository includes data, code, environment files, and a file containing al
 * **Forecast** - The file `Forecast_2023.csv` includes all the CWS forecasted to experience some form of drought impact.
 * **Docs** - This folder contains two documents. One, called `Data_Quality.md`, lists all the candidate data sources for the machine learning model, describes any data quality and integrity issues with each source, and provides solutions to address these issues. The second document, called `Future_Ideas.md`, lists research ideas, as well algorithms and tools, that might be useful to explore in the future. These documents may be useful for future roadmaps. 
 
+## Citation
+
+If you use any of this code or results, please consider citing our paper (TBD):
+
+```
+@article{Placeholder text}
+```
 
 ## Running the Model
 The following steps describe exactly how to use the data, code, and envrionment file together to build and run the model using [Jupyter Lab](https://jupyter.org/install). This will generate a .csv file of drought-impacted CWSs ranked by probability (see the column  `Expected`).
